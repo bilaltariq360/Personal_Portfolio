@@ -1,0 +1,325 @@
+@font-face {
+    font-family: font_1;
+    src: url('Fonts/Lobster-Regular.ttf');
+}
+@font-face {
+    font-family: font_2;
+    src: url('Fonts/MPLUS1Code-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: font_3;
+    src: url('Fonts/Outfit-VariableFont_wght.ttf');
+}
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 35px;
+  background: #ccd6f673;
+  transition: 0.5s;
+}
+::-webkit-scrollbar-track {
+  background: #0a192f;
+}
+html{
+  scroll-behavior: smooth;
+  user-select: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+nav{
+  list-style: none;
+  box-sizing: border-box;
+  font-family: font_2;
+  height: 60px;
+  width: 100%;
+  z-index: 1;
+  transition: 0.5s;
+}
+nav img{
+padding: 15px 0px 0px 15px;
+}
+nav img:hover{
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav i{
+color: #64ffda;
+font-size: 0.8rem;
+}
+nav input{
+border: none;
+outline: none;
+height: 25px;
+width: 100px;
+border-radius: 30px;
+padding-left: 15px;
+padding-right: 15px;
+background: #909c994b;
+font-size: 1rem;
+font-family: font_2;
+font-weight: 400;
+color: #64ffda;
+letter-spacing: 0.07rem;
+}
+nav input::placeholder{
+color: #64ffda;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 58px;
+  margin: 0 22px;
+  transition: 0.5s;
+}
+nav ul li:hover{
+transform: translateY(-5px);
+transition: 0.5s;
+}
+nav ul li a{
+  color: #64ffda;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.19rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+nav .active,nav ul li a:hover{
+border-bottom: 1px solid #64ffda;
+transition: 0.5s;
+}
+nav ul li a i{
+padding-right: 8px;
+transition: 0.5s;
+}
+body{
+  background: url('Images/Background.jpg');
+  background-blend-mode: overlay;
+  background-color: #000000a9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: font_2;
+}
+.main0 a i{
+    color: #ff001573;
+    font-size: 3rem;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transition: 0.5s;
+  }
+  .main0 a i:hover{
+    color: #ff0015;
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+.main111 h1{
+  padding-top: 100px;
+  text-align: center;
+  color: #64ffda;
+  font-size: 6rem;
+  transition: 0.5s;
+}
+.main111 h1:hover{
+    transform: translateY(-7px);
+    transition: 0.5s;
+}
+.main222 h1{
+  margin-top: 100px;
+  text-align: center;
+  color: #64ffda;
+  font-size: 3rem;
+  transition: 0.5s;
+}
+.main222 h1:hover{
+    transform: translateY(-7px);
+    transition: 0.5s;
+}
+.contactForm{
+    width: 30%;
+    padding: 40px;
+    margin-top: 100px;
+    background: #64ffda;
+    border-radius: 5px;
+    margin-left: 32%;
+    text-align: center;
+  }
+  .contactForm h2{
+    font-size: 2rem;
+    padding-bottom: 20px;
+    color: #0a192f;
+  }
+  .contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .contactForm .inputBox input, .contactForm .inputBox textarea{
+    width: 100%;
+    background: none;
+    padding: 5px 0px;
+    font-size: 1.2rem;
+    color: #0a192f;
+    font-weight: 1000;
+    font-family: font_2;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 2px solid #0a192f;
+    outline: none;
+    resize: none;
+  }
+  .contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0px;
+    font-size: 1.2rem;
+    margin: 10px 0px;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #0a192f;
+    font-weight: 1000;
+  }
+  .contactForm .inputBox input:focus ~ span,
+  .contactForm .inputBox input:valid ~ span,
+  .contactForm .inputBox textarea:focus ~ span,
+  .contactForm .inputBox textarea:valid ~ span{
+    font-size: 1rem;
+    transform: translateY(-30px);
+  }
+  .contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    color: #0a192f;
+    border: 2px solid #0a192f;
+    border-radius: 3px;
+    font-family: font_2;
+    font-weight: 1000;
+    font-size: 1rem;
+    transition: 0.5s;
+  }
+  .contactForm .inputBox input[type="submit"]:hover{
+    background: #0a192f;
+    color: #64ffda;
+    transition: 0.5s;
+  }
+  footer {
+    background: #64ffda;
+    margin-top: 250px;
+  }
+  .brand h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #0a192f;
+    padding-top: 100px;
+  }
+  .social-media{
+    background: url('Images/Background.jpg');
+    background-blend-mode: overlay;
+    background-color: #000000a9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 100px;
+  }
+  .social-media h2{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #64ffda;
+    padding-top: 20px;
+    transition: 0.5s;
+  }
+  .social-media h2:hover{
+    transform: translateY(-5px);
+    transition: 0.5s;
+  }
+  .social-media p {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .social-media i {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 15px 0px 15px 0px;
+    color: #64ffda;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .social-media p a i:hover{
+    background: none;
+    color: #3ea089;
+    transform: translateY(-5px);
+    transition: 0.5s;
+  }
+  .last-heading {
+    margin-top: 100px;
+  }
+  .last-heading h2 {
+    text-align: center;
+    color: #0a192f;
+    font-size: 25px;
+  }
+  .last-heading p {
+    text-align: center;
+    color: #0a192f;
+    font-size: 22px;
+  }
+  .last-heading-1 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .last-heading-1 p {
+    text-align: center;
+    color: #0a192f;
+  }
+  .last-heading-1 a {
+    text-align: center;
+    color: #0a192f;
+    font-size: 22px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline-flex;
+  }
+  .last-heading-1 p a:hover{
+    background: none;
+  }
+  .email {
+    text-transform: lowercase;
+    letter-spacing: 0.08rem;
+  }
+  .phone {
+    letter-spacing: 0.1rem;
+  }
+  .address {
+    letter-spacing: 0.08rem;
+  }
+  .last-heading-1 a i {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #0a192f;
+    text-align: center;
+  }
+  .copyright p {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 800;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #0a192f;
+    border-top: 0.5px solid #0a192f;
+  }
+  .copyright p i{
+    padding-right: 1.5%;
+  }
